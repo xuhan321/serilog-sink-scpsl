@@ -33,7 +33,7 @@ new ScpslSink(ITextFormatter formatter)                  // 自定义格式
 new ScpslSink(ITextFormatter formatter, string prefix)   // 自定义格式和前缀（传入 null 或 "" 可移除前缀）
 ```
 
-> ⚠️ **提示**：LocalAdmin 控制台会自动为每条日志添加时间戳 `[yyyy-MM-dd HH:mm:ss]`，且无法修改。因此 Sink 的**默认格式化器**已去除 `{Timestamp}`，避免重复。如果你自定义格式化器，也请勿包含时间戳。
+> ⚠️ **提示**：LocalAdmin 控制台会自动为每条日志添加时间戳，且无法修改。因此 Sink 的**默认格式化器**已去除 `{Timestamp}`，避免重复。如果你自定义格式化器，也请勿包含时间戳。
 
 #### 输出示例
 ```csharp
